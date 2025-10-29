@@ -5,7 +5,7 @@ export default function DonateButton() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/donate"); // You can make a donate page later
+    router.push("/donate"); 
   };
 
   return (
