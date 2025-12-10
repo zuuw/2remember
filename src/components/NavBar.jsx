@@ -4,12 +4,16 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation"; 
+
 
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
+  
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 100);
     return () => clearTimeout(timer);
@@ -49,7 +53,7 @@ export default function Navbar() {
             key={link.name}
             href={link.href}
             className={`transition hover:opacity-80 relative after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:rounded-full after:transition-all
-              ${(typeof window !== 'undefined') && window.location.pathname === link.href
+              ${ pathname === link.href
                 ? "after:bg-white"
                 : "after:bg-transparent hover:after:bg-white/60"}`}
           >
