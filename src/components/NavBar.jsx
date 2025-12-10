@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation"; 
+import Image from "next/image";
 
 
 export default function Navbar() {
@@ -31,8 +32,8 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Donate", href: "/donate" },
     { name: "Resources", href: "/resources" },
+    { name: "Donate", href: "/donate" },
   ];
 
   return (
@@ -40,11 +41,11 @@ export default function Navbar() {
       initial={{ y: -50, opacity: 0 }}
       animate={isVisible ? { y: 0, opacity: 1 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed left-1/2 -translate-x-1/2 top-6 z-50 w-[92%] max-w-3xl px-6 py-3 rounded-2xl shadow-2xl backdrop-blur-md flex items-center justify-between transition-all duration-300
+      className={`fixed h-[65px] left-1/2 -translate-x-1/2 top-6 z-50 w-[92%] max-w-3xl px-6 py-3 rounded-2xl shadow-2xl backdrop-blur-md flex items-center justify-between transition-all duration-300
         ${isScrolled ? "bg-purple-700/20 shadow-xl" : "bg-purple-600/50"}`}
     >
       {/* Logo */}
-      <div className="font-bold text-2xl tracking-wide">2Remember</div>
+<Image src="/2r.png" alt="2Remember Logo" width={200} height={200} className="pr-10 w-[150px] h-[initial] object-contain lg:pr-5" />
 
       {/* Desktop Nav */}
       <div className="hidden md:flex gap-6 text-lg">

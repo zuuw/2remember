@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import TeamGrid from "@/components/TeamGrid";
 
 
@@ -20,10 +21,11 @@ Our mission is to create a future where no one faces dementia alone.
 
 
 {/* Team section */}
-<section className="py-20 ">
+<section className="py-20 mb-[45px] lg:mb-[100px] ">
 <h2 className="text-4xl font-bold text-center mb-12">Meet Our Team</h2>
-<TeamGrid className="pb-[100px]" />
+<TeamGrid />
 </section>
+<Footer />
 </div>
 );
 }

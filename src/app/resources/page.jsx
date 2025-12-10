@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Footer from "@/components/Footer";
 
 
 export default function ResourcesPage() {
@@ -67,6 +68,7 @@ className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition cursor-
 </motion.div>
 ))}
 </div>
+<Footer />
 </div>
 );
 }

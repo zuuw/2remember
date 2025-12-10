@@ -1,4 +1,5 @@
 import DonateForm from "@/components/DonateForm";
+import Footer from "@/components/Footer";
 
 
 export default function DonatePage() {
@@ -9,6 +10,7 @@ return (
 Your donation helps raise awareness and support individuals and families affected by dementia and Alzheimer’s.
 </p>
 <DonateForm />
+<Footer />
 </div>
 );
 }

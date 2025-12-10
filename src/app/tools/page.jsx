@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 
 
 export default function ToolsPage() {
@@ -9,6 +10,7 @@ export default function ToolsPage() {
           Here you’ll find practical tools and exercises designed to help caregivers stay organized and maintain mental well-being.
         </p>
       </section>
+      <Footer />
     </main>
   );
 }

@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import AboutSection from "@/components/home/AboutSection";
 import CTASection from "@/components/home/CTASection";
 import HeroSection from "@/components/home/HeroSection";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <MissionSection />
       <ValuesSection />
       <CTASection />
+      <Footer />
     </main>
   );
 }

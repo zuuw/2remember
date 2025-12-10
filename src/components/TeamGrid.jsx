@@ -6,11 +6,11 @@ export default function TeamGrid() {
           key={index}
           className=" p-6 rounded-2xl shadow-md flex flex-col items-center text-center hover:shadow-lg transition group relative"
         >
-          <div className="rounded-full p-1 transition group-hover:bg-orange-500">
+          <div className="rounded-full p-1 ">
             <img
               src={member.img}
               alt={member.name}
-              className="w-32 h-32 object-cover rounded-full mb-4 shadow"
+              className="w-32 h-32 object-cover rounded-full mb-4 transition group-hover:bg-purple-500"
             />
           </div>
 
@@ -19,7 +19,7 @@ export default function TeamGrid() {
 
           {/* Absolute overlay bio — appears under the picture without changing layout */}
           <div
-            className="absolute left-1/2 top-[110%] -translate-x-1/2 w-[min(90%,18rem)]  backdrop-blur-sm p-3 rounded-lg shadow-lg text-gray-700 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 z-50"
+            className="absolute left-1/2 top-[100%] -translate-x-1/2 w-[min(90%,18rem)]  backdrop-blur-sm p-3 rounded-lg shadow-lg text-gray-700 opacity-0 pointer-events-none group-hover:bg-white group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 z-50"
             aria-hidden="false"
           >
             <p className="text-sm">
