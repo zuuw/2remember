@@ -31,7 +31,7 @@ export default function HeroSection() {
       }`}
     >
       {/* Absolutely positioned logo (doesn't push content) */}
-      <div className="absolute top-[7%] w-[300px] md:w-[450px] lg:w-[800px] mx-auto">
+      {/* <div className="absolute top-[7%] w-[300px] md:w-[450px] lg:w-[800px] mx-auto">
         <Image
           src="/2remember.png"
           alt="2Remember Logo"
@@ -42,8 +42,8 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Spacer so content doesn't overlap with floating logo */}
-      <div className="h-[100px] md:h-[150px]" />
+   
+      <div className="h-[100px] md:h-[150px]" /> */}
 
       <h1 className="text-4xl md:text-5xl font-bold text-purple-700 mb-4">
         Remembering Matters
